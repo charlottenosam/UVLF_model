@@ -1,4 +1,6 @@
-# Mason, Trenti & Treu (2015, 2022) UV luminosity function model 0 < z < 20
+# UV LF model
+
+Mason, Trenti & Treu (2015, 2022) UV luminosity function model 0 < z < 20
 
 - `LF/` contains the UV LF model, both with and without dust attenuation
 - `MUV_Mh/` contains the UV magnitude - halo mass relation, both with and without dust attenuation
