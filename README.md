@@ -1,11 +1,28 @@
 # UV luminosity functions
 Mason, Trenti & Treu ([2015](https://ui.adsabs.harvard.edu/abs/2015ApJ...813...21M/abstract), [2022](https://ui.adsabs.harvard.edu/abs/2022arXiv220714808M/abstract)) UV luminosity function model 0 <= z <= 20
 
-- `LF/` contains the UV LF model, both with and without dust attenuation. Columns are Muv[mag], log10_Phi_max (100% efficiency LF), log10_Phi_dust, log10_Phi_nodust. Phi units are #/mag/Mpc^3.
+- `LF/` contains the UV LF model, both with and without dust attenuation and for ST and Reed+07 hmf (see [Assumptions](#assumptions) below). Columns are:
+
+  1. Muv[mag]
+  2. log10_Phi_max (100% efficiency LF)
+  3. log10_Phi_dust
+  4. log10_Phi_nodust
+Phi units are #/mag/Mpc^3.
+
+e.g. to plot the 'dust' model below at z=12 using the Reed+07 hmf use
+```
+z = 12
+LF = np.genfromtxt(f'../../UVLF_model/LF/LF_z={z}_Reed07.txt') 
+plt.semilogy(LF[:,0], 10**LF[:,2])
+```
 
 ![LF](LF/LF_Reed07.png)
 - `MUV_Mh/` contains the UV magnitude - halo mass relation, both with and without dust attenuation
-Muv_Mh. Columns are logMh [Msun], Muv[mag], Muv_dust[Mag] (which includes dust attenuation following Mason+15 eqn 4)
+Muv_Mh. Columns are: 
+
+  1. logMh [Msun]
+  2. Muv[mag]
+  3. Muv_dust[Mag] (which includes dust attenuation following Mason+15 eqn 4)
 
 ![MUV_Mh](Muv_Mh/Muv_Mh.png)
 
