@@ -1,7 +1,7 @@
 # UV luminosity functions
 Mason, Trenti & Treu ([2015](https://ui.adsabs.harvard.edu/abs/2015ApJ...813...21M/abstract), [2022](https://ui.adsabs.harvard.edu/abs/2022arXiv220714808M/abstract)) UV luminosity function model 0 <= z <= 20
 
-- `LF/` contains the UV LF model, both with and without dust attenuation and for ST and Reed+07 hmf (see [Assumptions](#assumptions) below). Columns are:
+- `LF/` contains the UV LF model, both with and without dust attenuation and for ST and Reed+07 hmf (see [Assumptions](#assumptions) below). Uncertainties are approx. 0.2-0.4 dex based on the calibration at z~5 (I would assume 0.2 dex at z<9, 0.3 dex at 9 < z < 13 and 0.4 dex at z>13). Columns are:
 
   1. Muv[mag]
   2. log10_Phi_max (100% efficiency LF)
