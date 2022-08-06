@@ -1,10 +1,12 @@
 # UV luminosity functions
-Mason, Trenti & Treu (2015, 2022) UV luminosity function model 0 <= z <= 20
+Mason, Trenti & Treu ([2015](https://ui.adsabs.harvard.edu/abs/2015ApJ...813...21M/abstract) (for z < 10), [2022](https://ui.adsabs.harvard.edu/abs/2022arXiv220714808M/abstract)) UV luminosity function model 0 <= z <= 20
 
 - `LF/` contains the UV LF model, both with and without dust attenuation. Columns are Muv[mag], log10_Phi_max (100% efficiency LF), log10_Phi_dust, log10_Phi_nodust. Phi units are #/mag/Mpc^3.
+
 ![LF](LF/LF_Reed07.png)
 - `MUV_Mh/` contains the UV magnitude - halo mass relation, both with and without dust attenuation
 Muv_Mh. Columns are logMh [Msun], Muv[mag], Muv_dust[Mag] (which includes dust attenuation following Mason+15 eqn 4)
+
 ![MUV_Mh](Muv_Mh/Muv_Mh.png)
 
 ## Assumptions
